@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe - ShipDecKK</title>
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/subscribe.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <script src="/JavaScript/responsive.js"></script>
+    <script src="/JavaScript/subscribe.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="/Assets/Logo.png" alt="ShipDecKK Logo">
+                </div>
+                <span class="logo-text">ShipDecKK</span>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <a href="subscribe.html" class="subscribe-btn active">Subscribe</a>
+            <button class="mobile-menu-btn" aria-label="Menu Toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="subscribe.html" class="active">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="subscribe-section">
+            <div class="container">
+                <div class="subscribe-content">
+                    <div class="subscribe-form-container">
+                        <h1>Stay In the Loop</h1>
+                        <p class="subscribe-subtitle">Get the latest offers, promotions, and ship news.</p>
+                        
+                        <form id="subscribeForm" class="subscribe-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your Name">
+                                <div class="error-message" id="nameError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your Email">
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="text" id="age" name="age" placeholder="Enter your Age">
+                                <div class="error-message" id="ageError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password">Create Password</label>
+                                <input type="password" id="password" name="password" placeholder="Password must be minimum 8 characters">
+                                <div class="error-message" id="passwordError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password">
+                                <div class="error-message" id="confirmPasswordError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Ship Interest Types</label>
+                                <div class="checkbox-group">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="luxury" name="interests" value="luxury">
+                                        <label for="luxury">Luxury Yachts</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="cargo" name="interests" value="cargo">
+                                        <label for="cargo">Cargo Ships</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="cruise" name="interests" value="cruise">
+                                        <label for="cruise">Cruise Liners</label>
+                                    </div>
+                                </div>
+                                <div class="error-message" id="interestsError"></div>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                    </div>
+                    
+                    <div class="subscribe-image">
+                        <img src="/Assets/Subscribe.jpg" alt="Luxury Yacht">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div id="successModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="success-content">
+                    <div class="success-icon">✓</div>
+                    <h3>Thank You for Subscribing!</h3>
+                    <p>Your subscription has been successfully registered. You will now receive the latest updates on ship news, promotions, and offers.</p>
+                    <button id="closeSuccessBtn" class="continue-btn">Continue Browsing</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div class="logo-circle">
+                        <img src="/Assets/Logo.png" alt="ShipDecKK Logo">
+                    </div>
+                    <span class="logo-text">ShipDecKK</span>
+                </div>
+                <p class="tagline">Where quality meets the sea.</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="quick-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="subscribe.html">Subscribe</a></li>
+                    </ul>
+                </div>
+                
+                <div class="social-links">
+                    <h4>Social Links</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">Facebook</a></li>
+                        <li><a href="#" target="_blank">Twitter/X</a></li>
+                        <li><a href="#" target="_blank">Instagram</a></li>
+                        <li><a href="#" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 ShipDecKK. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

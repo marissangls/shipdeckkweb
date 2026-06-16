@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - ShipDecKK</title>
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/services.css">
+    <script src="/JavaScript/responsive.js"></script>
+    <script src="/JavaScript/services.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="/Assets/Logo.png" alt="ShipDecKK Logo">
+                </div>
+                <span class="logo-text">ShipDecKK</span>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <a href="subscribe.html" class="subscribe-btn">Subscribe</a>
+            <button class="mobile-menu-btn" aria-label="Menu Toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services-hero">
+            <div class="container">
+                <h1>What We Offer</h1>
+                <p class="subtitle">A full range of professional maritime services.</p>
+            </div>
+        </section>
+
+        <section class="services-grid">
+            <div class="container">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="/Assets/ShipIcon.svg" alt="Ship Sales Icon">
+                    </div>
+                    <h3>Ship Sales</h3>
+                    <p>Choose from a wide range of yachts, cargo ships, and luxury liners tailored to your mission.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="/Assets/AnchorIcon.svg" alt="Custom Ship Design Icon">
+                    </div>
+                    <h3>Custom Ship Design</h3>
+                    <p>Build a vessel from the keel up with our expert naval architects and design team.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="/Assets/RepairIcon.svg" alt="Maintenance Icon">
+                    </div>
+                    <h3>Maintenance & Repairs</h3>
+                    <p>Ensure your ship's performance with inspection, maintenance, and repair services.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="/Assets/ShieldIcon.svg" alt="Insurance Icon">
+                    </div>
+                    <h3>Insurance Support</h3>
+                    <p>Navigate risks with expert assistance on maritime insurance and documentation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-cta">
+            <div class="container">
+                <h2>Need a custom solution or assistance?</h2>
+                <a href="#" class="cta-button" id="contactBtn">Contact Us</a>
+            </div>
+        </section>
+
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Contact ShipDecKK</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="">Select a subject</option>
+                            <option value="sales">Ship Sales</option>
+                            <option value="design">Custom Ship Design</option>
+                            <option value="maintenance">Maintenance & Repairs</option>
+                            <option value="insurance">Insurance Support</option>
+                            <option value="other">Other Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div class="logo-circle">
+                        <img src="/Assets/Logo.png" alt="ShipDecKK Logo">
+                    </div>
+                    <span class="logo-text">ShipDecKK</span>
+                </div>
+                <p class="tagline">Where quality meets the sea.</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="quick-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="subscribe.html">Subscribe</a></li>
+                    </ul>
+                </div>
+                
+                <div class="social-links">
+                    <h4>Social Links</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">Facebook</a></li>
+                        <li><a href="#" target="_blank">Twitter/X</a></li>
+                        <li><a href="#" target="_blank">Instagram</a></li>
+                        <li><a href="#" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 ShipDecKK. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
